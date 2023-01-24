@@ -17,28 +17,104 @@ body{
     font-family: Lexend Deca, sans-serif;
     background-color: var(--Very-light-gray);
 }
-main{
-    font-size: 15px;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    
-    padding: 20px;
+.container{
+  padding: 20px;
 }
 .sedans{
-    padding: 30px;
     background-color: var(--Bright-orange);
+    padding: 30px;
     border-radius: 10px 10px 0 0;
+    
 }
 .suvs{
     padding: 30px;
     background-color: var(--Dark-cyan);
-}
-.luxury{
-    padding: 30px;
-    background-color: var(--Very-dark-cyan);
     border-radius: 0 0 10px 10px;
 }
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+.card-heading{
+    font-family: Big Shoulders Display, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--Very-light-gray);
+    padding: 15px 0;
+}
+p{
+    color: var(--Transparent-white);
+    padding-bottom: 40px;
+    font-size: 15px;
+    line-height: 2.0;
+    margin-bottom: 40px
+}
+.card_container{
+    margin-bottom: 20px;
+    padding: 40px;
+}
+.btn{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+.btn-sedans {
+    color: var(--Bright-orange)
+}
 
+.btn-suvs {
+    color: var(--Dark-cyan)
+}
 
+.btn-luxury {
+    color: var(--Very-dark-cyan)
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px){
+    .container{
+        font-size: 15px;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+        margin: auto;
+    }
+    .sedans{
+        padding: 30px;
+        border-radius: 10px 10px 0 0;
+    }
+    .suvs{
+        padding: 30px;
+    }
+    .luxury{
+        padding: 30px;
+        border-radius: 0 0 10px 10px;
+    }
+    .card_container{
+        padding: 30px;
+    }
+    .card-heading{
+        padding: 25px 0;
+    }
+    p{
+        line-height: 2.0;
+        margin-bottom: 40px;
+    }
+}
