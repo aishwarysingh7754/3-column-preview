@@ -1,0 +1,44 @@
+@import url("https: //fonts.google.com/specimen/Lexend+Deca");
+@import url("https: //fonts.google.com/specimen/Big+Shoulders+Display");
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Lexend Deca, sans-serif;
+    background-color: var(--Very-light-gray);
+}
+main{
+    font-size: 15px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+}
+.sedans{
+    padding: 30px;
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+.suvs{
+    padding: 30px;
+    background-color: var(--Dark-cyan);
+}
+.luxury{
+    padding: 30px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+
